@@ -4,6 +4,16 @@ body {
     background: linear-gradient(to right,#d4f8f4, #1bddba);
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
 h1 {
     font-family: "Paytone One"; 
     font-size: 4em;
@@ -11,46 +21,59 @@ h1 {
     text-align: center;
 }
 
-h5 {
-    font-family: "Paytone One"; 
-    font-size: 1.5em;
-    color: slategray;
-    font-weight: 200;
-    text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
 }
 
-.subjects {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.spa, .lat, .eng {
-    background-color: #FF9551;
-    padding: 1.5rem;
-    width: 20rem;
-    text-align: center;
-    color: slategray;
-    font-family: "Paytone One";
-    font-weight: 200;
-    font-size: 3rem;
-    border-radius: 40%;
-    border: 2px solid slategray;
-    cursor: pointer;
-    text-decoration: none;
-}
 
 h3 {
     font-family: "Paytone One";
     font-weight: 300;
     font-size: 2.5rem;
     text-align: center;
-    color: #FF9551;
+    color: #FF4A4A;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+
+h5 {
+    font-family: "Paytone One"; 
+    font-size: 1.5em;
+    color: slategray;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+
+.top, a {
+    text-align: center;
+    font-family: "Paytone One";
+    color: slategray;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subjects {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF9551;
+    color: slategray;
+    font-family: "Paytone One";
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.spa:hover, .eng:hover, .lat:hover {
+    color: #FF4A4A;
+    
 }
 
 .engwordspa, .engwordlat, .latword, .gerwordeng, .engword, .spaword {
@@ -84,6 +107,11 @@ h3 {
     justify-content: space-around;
 }
 
+.click{
+    display: flex;
+    justify-content: space-around;
+}
+
 button {
     padding: 1rem;
     font-size: 2rem;
@@ -93,6 +121,11 @@ button {
     border-radius: 10%;
     border: 2px solid slategray;
     margin-bottom: 2rem;
+    transition: .2s ease-in-out 0s;
+}
+
+button:hover {
+    transform: scale(1.25);
 }
 
 #spanisch, #latin, #englisch {

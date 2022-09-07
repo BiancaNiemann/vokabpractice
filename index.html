@@ -10,14 +10,14 @@
     <title>Learn your Vokabel</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="sub">
+        <img src="./pen_pic.png" alt="Cookie monster">
         <h1>Choose your subject</h1>
+        <img src="./pen_pic.png" alt="Elmo">
     </header>
 
-    <hr>
-
     <nav>
-        <div class="subjects">
+        <div class="subjects" >
             <h2><a href="#spanisch" class="spa">Spanisch</a></h2>
             <h2><a href="#latin" class="lat">Latin</a></h2>
             <h2><a href="#englisch" class="eng">Englisch</a></h2>
@@ -35,13 +35,23 @@
                 <p class="engwordspa">Hello</p>
                 <p class="spaword">Hola</p>
             </div>
-            <button id="revealspa">Click to see the next word</button>
+            
         </div>
         
-        <h5>Where you right or wrong?</h5>
+        <h5>Were you right or wrong - click the box</h5>
+        
         <div class="answerbox">
             <button class="rightanswer">Right</button>
             <button class="wronganswer">Wrong</button>
+        </div>
+
+        <div class="click">
+            <button id="revealspa">Click to see the next word</button>
+        </div>
+
+        <div class="top">
+            <a href="#sub">Back to the top - Click here!</a>
+            <a href="#answer">End to see total score - Click here!</a>
         </div>
         
         <hr>
@@ -53,13 +63,23 @@
                 <p class="engwordlat">Hello</p>
                 <p class="latword" >Salve</p>
             </div>  
-                <button id="reveallat">Click to see the next word</button>
+                
         </div>
 
-        <h5>Where you right or wrong?</h5>
+        <h5>Were you right or wrong - click the box</h5>
+        
         <div class="answerbox">
             <button class="rightanswer">Right</button>
             <button class="wronganswer">Wrong</button>
+        </div>
+
+        <div class="click">
+            <button id="reveallat">Click to see the next word</button>
+        </div>
+
+        <div class="top">
+            <a href="#sub">Back to the top - Click here!</a>
+            <a href="#answer">End to see total score - Click here!</a>
         </div>
 
         <hr>
@@ -71,20 +91,31 @@
                 <p class="gerwordeng" >Hallo</p>
                 <p class="engword" >Hello</p>
             </div>
-            <button id="revealeng">Click to see the next word</button>
+            
         </div>
 
-        <h5>Where you right or wrong?</h5>
+        <h5>Were you right or wrong - click the box</h5>
+        
         <div class="answerbox">
             <button class="rightanswer">Right</button>
             <button class="wronganswer">Wrong</button>
         </div>
+        
 
+        <div class="click">
+            <button id="revealeng">Click to see the next word</button>
+        </div>
+
+        <div class="top">
+            <a href="#sub">Back to the top - Click here!</a>
+            <a href="#answer">End to see total score - Click here!</a>
+        </div>
+        <hr>
     </section>
 </body>
 <footer>
     <h5>Here is your total score:</h5>
-    <div class="totalAnswers">
+    <div class="totalAnswers" id="answer">
         <p >Right Answers: <span class="rgt" id="totalRight">0</span></p>
         <p >Wrong Answers: <span id="totalWrong">0</span></p>
     </div>
