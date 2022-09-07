@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <title>Learn your Vokabel</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Choose your subject</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <div class="subjects">
+            <h2><a href="#spanisch" class="spa">Spanisch</a></h2>
+            <h2><a href="#latin" class="lat">Latin</a></h2>
+            <h2><a href="#englisch" class="eng">Englisch</a></h2>
+        </div>
+    </nav>
+
+    <hr>
+
+    <section>
+
+        <div id="spanisch">
+            <h3>Hola, aprendamos algo de español</h3>
+            <h5>Hover over the right side box to see the answer</h5>
+            <div class="wordbox" id="spanword">
+                <p class="engwordspa">Hello</p>
+                <p class="spaword">Hola</p>
+            </div>
+            <button id="revealspa">Click to see the next word</button>
+        </div>
+        
+        <h5>Where you right or wrong?</h5>
+        <div class="answerbox">
+            <button class="rightanswer">Right</button>
+            <button class="wronganswer">Wrong</button>
+        </div>
+        
+        <hr>
+
+        <div id="latin">
+            <h3>Salve, quaedam Latine discamus</h3>
+            <h5>Hover over the right side box to see the answer</h5>
+            <div class="wordbox" id="latword">
+                <p class="engwordlat">Hello</p>
+                <p class="latword" >Salve</p>
+            </div>  
+                <button id="reveallat">Click to see the next word</button>
+        </div>
+
+        <h5>Where you right or wrong?</h5>
+        <div class="answerbox">
+            <button class="rightanswer">Right</button>
+            <button class="wronganswer">Wrong</button>
+        </div>
+
+        <hr>
+
+        <div id="englisch">
+            <h3>Hello, let's learn some English</h3>
+            <h5>Hover over the right side box to see the answer</h5>
+            <div class="wordbox" id="engword">
+                <p class="gerwordeng" >Hallo</p>
+                <p class="engword" >Hello</p>
+            </div>
+            <button id="revealeng">Click to see the next word</button>
+        </div>
+
+        <h5>Where you right or wrong?</h5>
+        <div class="answerbox">
+            <button class="rightanswer">Right</button>
+            <button class="wronganswer">Wrong</button>
+        </div>
+
+    </section>
+</body>
+<footer>
+    <h5>Here is your total score:</h5>
+    <div class="totalAnswers">
+        <p >Right Answers: <span class="rgt" id="totalRight">0</span></p>
+        <p >Wrong Answers: <span id="totalWrong">0</span></p>
+    </div>
+    <h5 class="suggest">Well Done!</h5>
+
+</footer>
+<script src="script.js"></script>
+</html>

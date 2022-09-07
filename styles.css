@@ -1,0 +1,132 @@
+
+
+body {
+    background: linear-gradient(to right,#d4f8f4, #1bddba);
+}
+
+h1 {
+    font-family: "Paytone One"; 
+    font-size: 4em;
+    color: #FF4A4A;
+    text-align: center;
+}
+
+h5 {
+    font-family: "Paytone One"; 
+    font-size: 1.5em;
+    color: slategray;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.subjects {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.spa, .lat, .eng {
+    background-color: #FF9551;
+    padding: 1.5rem;
+    width: 20rem;
+    text-align: center;
+    color: slategray;
+    font-family: "Paytone One";
+    font-weight: 200;
+    font-size: 3rem;
+    border-radius: 40%;
+    border: 2px solid slategray;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: "Paytone One";
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FF9551;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.engwordspa, .engwordlat, .latword, .gerwordeng, .engword, .spaword {
+    width: 25rem;
+    height: auto;
+    text-align: center;
+    font-family: "Architects Daughter";
+    font-size: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: slategrey;
+    border: 2px solid slategray;
+    border-radius: 5%;
+    background-color: lightgray;
+}
+
+.spaword,.latword, .engword{
+    color: transparent;
+}
+
+.spaword:hover, .latword:hover, .engword:hover {
+    color: #1bddba;
+    background-color: slategray;
+    border: 2px solid lightgray;
+}
+
+.wordbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 1rem;
+    font-size: 2rem;
+    top: 0;
+    background-color: #FF9551;
+    color: slategray;
+    border-radius: 10%;
+    border: 2px solid slategray;
+    margin-bottom: 2rem;
+}
+
+#spanisch, #latin, #englisch {
+    text-align: center;
+}
+
+.answerbox {
+    display: flex;
+    justify-content: space-around;
+}
+.rightanswer, .wronganswer {
+    font-family: "Architects Daughter";
+    font-size: 1.5rem;
+    color: #FF9551;
+    background-color: slategray;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 2px solid #FF9551;
+}
+
+
+.left {
+    padding-right: 2rem;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem;
+}
+
+.totalAnswers {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Architects Daughter";
+    font-size: 1.5rem;
+    color: slategray;
+}
