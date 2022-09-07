@@ -134,7 +134,7 @@ let spanisch = [
     {
         engwordspa:"mies / furchtbar",
         spaword:"fatal"
-    },
+    }/*,
     {
         engwordspa:"",
         spaword:""
@@ -848,8 +848,8 @@ let englisch = [
     {
         gerwordeng:"Schulheft, Ubungsheft",
         engword:"exercise book"
-    },
-    /*{
+    }/*,
+    {
         gerwordeng:"",
         engword:""
     },
