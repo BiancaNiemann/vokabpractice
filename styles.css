@@ -50,13 +50,14 @@ h5 {
 }
 
 .top, a {
-    text-align: center;
     font-family: "Paytone One";
     color: slategray;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .subjects {
@@ -162,4 +163,34 @@ footer {
     font-family: "Architects Daughter";
     font-size: 1.5rem;
     color: slategray;
+}
+
+.calcButton {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 420px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    .top, a {
+        display: block;
+        text-align: center;
+    }
+    .subjects {
+        display: block;
+    }
+    .wordbox {
+        display: block;
+    }
+    button {
+        transition: none;
+        width: 200px;
+    }
+    .totalAnswers {
+        display: block;
+        text-align: center;
+    }
 }

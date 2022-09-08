@@ -455,7 +455,7 @@ let englisch = [
     },
     {
         gerwordeng:"Wilkommen in Plymouth",
-        engword:"Welcome to PLymouth"
+        engword:"Welcome to Plymouth"
     },
     {
         gerwordeng:"in, an, zu, nach",
@@ -893,6 +893,7 @@ function printQuestionLat() {
 }
 
 //event listener to activate the click on button
+
 document.getElementById("reveallat").addEventListener("click", printQuestionLat, false);
 
 
@@ -916,23 +917,27 @@ function printQuestionEng() {
 }
 
 //event listener to activate the click on button
+
 document.getElementById("revealeng").addEventListener("click", printQuestionEng, false);
 
 //total up the right and wrong answers
 
-
+function totalClicks() {
 var rightanswer = document.querySelectorAll(".rightanswer");
 var CountClicks = 0;
+
 
 rightanswer.forEach(answer => {
     answer.addEventListener ("click", function() {
     CountClicks += 1;
     var rig = CountClicks;
-
+        
     var totalRight = document.getElementById("totalRight");
     var totalRightAnswers = `<span class="rgt">${rig}</span>`;
     totalRight.innerHTML = totalRightAnswers;
-});
+        return rig;
+    });
+    
 })
 
 var wronganswer = document.querySelectorAll(".wronganswer");
@@ -946,8 +951,76 @@ wronganswer.forEach(answer => {
     var totalWrong = document.getElementById("totalWrong");
     var totalWrongAnswers = `<span class="rgt">${wor}</span>`;
     totalWrong.innerHTML = totalWrongAnswers;
-});
+    });
 })
+}
+totalClicks();
+
+/*calculate percentage*/
+
+let right = 0;
+let rightArr = []
+
+function addCorrect() {
+    right = right + 1;
+    let addToRight = rightArr.push(right)
+    return addToRight;
+}
+
+let wrong = 0;
+let wrongArr = []
+
+function addWrong() {
+    wrong = wrong + 1;
+    let addToWrong = wrongArr.push(wrong)
+    return addToWrong;
+}
+
+/*Load results and percentages to the page*/
+
+function calcButton(){
+    let totalTry = (addCorrect()-1) + (addWrong()-1);
+    let totalRgt = (addCorrect()-2); 
+    let totalPerc = Math. trunc((totalRgt / totalTry) *100);
+            
+    var rightScore = document.getElementById("rightScore");
+    var totalRight = `<span class="rightScore">${totalRgt}</span>`;
+    rightScore.innerHTML = totalRight;
+    
+    var totalScore = document.getElementById("totalScore");
+    var totalHits = `<span class="totalScore">${totalTry}</span>`;
+    totalScore.innerHTML = totalHits;
+
+    var percent = document.getElementById("percent");
+    var totalPercentage = `<span class="percent">${totalPerc}</span>`;
+    percent.innerHTML = totalPercentage;
+
+    if (totalPerc >= 50) {
+
+        var wellDone = document.getElementById("sug");
+        var wellDoneMsg = `<span class="sug">Well Done!!</span>`;
+        wellDone.innerHTML = wellDoneMsg;
+
+    } else {
+
+        var tryAgain = document.getElementById("sug");
+        var tryAgainMsg = `<span class="sug">Maybe keep practicing!!</span>`;
+        tryAgain.innerHTML = tryAgainMsg;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
